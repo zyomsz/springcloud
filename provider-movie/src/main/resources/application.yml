@@ -1,0 +1,13 @@
+server:
+  port: 8903
+
+# 2、配置
+spring:
+  application:
+    name: ProviderMovie
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true #注册服务使用IP的方式
